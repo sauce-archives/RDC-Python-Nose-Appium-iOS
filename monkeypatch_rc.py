@@ -3,7 +3,6 @@ from selenium.webdriver.remote.remote_connection import RemoteConnection
 old_init = RemoteConnection.__init__
 
 def new_init(self, *args, **kwargs):
-    print "using new init!"
     kwargs['resolve_ip'] = False
     return old_init(self, *args, **kwargs)
 
