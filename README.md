@@ -12,13 +12,7 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
     ```
     * Install [pip](https://pip.pypa.io/en/stable/installing/) to install packages
 
-2. Sauce Credentials
-    * In the terminal export your Sauce Labs Credentials as environmental variables:
-    ```
-    $ export SAUCE_USERNAME=<your Sauce Labs username>
-	$ export SAUCE_ACCESS_KEY=<your Sauce Labs access key>
-    ```
-3. Project Dependencies
+2. Project Dependencies
 	* Install packages (Use sudo if necessary)
 	```
 	$ pip install Appium-Python-Client sauceclient nose==1.1.0
@@ -29,8 +23,6 @@ Tests in Parallel:
 	```
 	$ nosetests --processes=8 --process-timeout=500
 	```
-
-[Sauce Labs Dashboard](https://saucelabs.com/beta/dashboard/)
 
 ### Advice/Troubleshooting
 
