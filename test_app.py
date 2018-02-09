@@ -14,7 +14,7 @@ def launchBrowser(caps):
     caps['name'] = inspect.stack()[1][3]
     # caps['testobject_api_key'] = os.environ['TESTOBJECT_API_KEY']
     return webdriver.Remote(
-            command_executor = os.environ[APPIUM_URL],
+            command_executor = os.environ['APPIUM_URL'],
             desired_capabilities = caps);
 
 def teardown_func():
