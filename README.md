@@ -17,6 +17,12 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
 	```
 	$ pip install Appium-Python-Client sauceclient nose==1.1.0
 	```
+3. Sauce Credentials
+    * In the terminal export your Sauce Labs Credentials as environmental variables:
+    Note: For python, appium endpoint should use HTTP endpoint, not HTTPS
+    ```
+    $ export TESTOBJECT_API_KEY=<your project's api key>
+    ```
 ### Running Tests
 
 Tests in Parallel:
