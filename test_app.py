@@ -9,7 +9,12 @@ browsers = [{
     'platformName':    'Android',
     'platformVersion': '7',
     'deviceName':      'LG Nexus 5X'
-}]
+},{
+	'platformName':    'Android',
+    'platformVersion': '8',
+    'deviceName':      'Google Pixel'
+}
+]
 
 def launchBrowser(caps):
     caps['name'] = inspect.stack()[1][3]
