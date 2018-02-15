@@ -6,15 +6,21 @@ from appium import webdriver
 import monkeypatch_rc
 
 browsers = [{
-    'testobject_api_key': os.environ['TESTOBJECT_API_KEY'],
-    'testobject_device': 'iPhone_6_16GB_real_2'
-}]
+    'platformName':    'Android',
+    'platformVersion': '7',
+    'deviceName':      'LG Nexus 5X'
+},{
+	'platformName':    'Android',
+    'platformVersion': '8',
+    'deviceName':      'Google Pixel'
+}
+]
 
 def launchBrowser(caps):
     caps['name'] = inspect.stack()[1][3]
-    # caps['testobject_api_key'] = os.environ['TESTOBJECT_API_KEY']
+    caps['testobject_api_key'] = os.environ['TESTOBJECT_API_KEY']
     return webdriver.Remote(
-            command_executor = "http://appium.testobject.com/wd/hub",
+            command_executor = "http://us1.appium.testobject.com/wd/hub",
             desired_capabilities = caps);
 
 def teardown_func():
