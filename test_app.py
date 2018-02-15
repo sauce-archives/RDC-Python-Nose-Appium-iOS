@@ -6,8 +6,9 @@ from appium import webdriver
 import monkeypatch_rc
 
 browsers = [{
-    'platformName': 'Android'
-
+    'platformName':    'Android',
+    'platformVersion': '7',
+    'deviceName':      'LG Nexus 5X'
 }]
 
 def launchBrowser(caps):
